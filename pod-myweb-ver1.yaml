@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: pod
+metadata:
+  name:k8sapp
+spec:
+  conteiners:
+    - name: container-apache
+      image: httpd
