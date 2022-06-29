@@ -1,10 +1,10 @@
 apiVersion: v1
-kind: pod
+kind: Pod
 metadata:
-  name:k8sapp
+  name: my-web
 spec:
-  conteiners:
+  containers:
     - name: container-apache
-      image: httpd
+      image: httpd:latest
       ports:
       - containerPort: 80
